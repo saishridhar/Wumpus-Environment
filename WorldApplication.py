@@ -20,7 +20,7 @@ class WorldApplication:
         keep_file = random.random() < params[6]
 
         if params[1]:
-            wumpus_world = WorldApplication.generate_random_wumpus_world(params[0] + curr_trial, parmas[2], params[3])
+            wumpus_world = WorldApplication.generate_random_wumpus_world(params[0] + curr_trial, params[2], params[3])
         else:
             rand = random.Random()
             wumpus_world = WorldApplication.generate_random_wumpus_world(rand.randint(0, 2**32 - 1), params[2], params[3])
